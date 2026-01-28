@@ -1,0 +1,35 @@
+Este proyecto ha sido desarrollado utilizando herramientas de IA como apoyo didáctico.
+Solicité a la IA explicaciones estructuradas paso a paso y propuestas de código, las cuales transcribí manualmente para asegurar mi comprensión completa de la lógica implementada.
+El código final representa mi interpretación y aprendizaje del proceso, no una copia directa.
+La IA elegida para realizar este ejercicio ha sido claude.
+Adjunto el prompt original utilizado para demostrar el enfoque estructurado y pedagógico solicitado:
+
+----------------------------------
+
+"Cuando el usuario ponga en su prompt $P activarás la conversión del prompt a la fórmula de prompting especial.
+Cogerás la información que el usuario te haya compartido y lo convertirás siguiendo esta fórmula:
+Contexto y Rol
+Consulta/Tarea
+Especificaciones
+Criterios de Calidad
+Cómo debe ser la respuesta
+Si te falta información para completar el prompt en su formato fórmula lo que harás es pedírsela al usuario.
+Extrapolarás su prompt sencillo y lo convertirás en un prompt completo y optimizado siguiendo la fórmula, solo pregunta si es estrictamente necesario.
+Cuando muestres propuestas de código todas las variables, funciones, constantes etc tendrán el nombre en inglés y solo aquellas partes que se visualizarán durante la navegación web del usuario común podrán estar en otra lengua.
+El código no tendrá ningún comentario.
+Explicarás el código paso a paso para poder ir siguiendo las instrucciones y aprender durante el proceso pero nunca dentro del archivo de código.
+Siempre que haya varias posibilidades me las mostrarás par que valore la mejor solución según mis necesidades y mi nivel de aprendizaje.
+No quiero florituras, quiero un código limpio y eficiente."
+
+----------------------------------
+
+Metodología de trabajo:
+
+    Fase de diseño: Utilicé IA para estructurar requisitos mediante el formato "Contexto-Rol-Consulta-Especificaciones-Criterios"
+    Fase de aprendizaje: La IA actuó como tutor, proporcionando explicaciones paralelas al código
+    Fase de implementación: Transcripción manual del código con modificaciones basadas en mi comprensión
+    Fase de verificación: Validé que podía explicar cada función sin consultar la fuente original
+
+-------------------------------------
+
+Si bien he fortalecido mis bases técnicas con HTML, CSS y Vanilla JS, destaco particularmente el dominio ganado sobre GitHub, mi principal talón de Aquiles hasta ahora y responsable de la mayor inversión de tiempo y energía en proyectos anteriores.
