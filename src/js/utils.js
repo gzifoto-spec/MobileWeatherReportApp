@@ -56,7 +56,11 @@ function getWeatherDescription(code) {
     return weatherCodes[code] || 'Desconocido';
 }
 
-function getWeatherIcon(code) {
+function getWeatherIcon(code, time = null) {
+    const hour = time ? new Date(time).getHours() : new Date().getHours();
+    const isNight = hour >= 22 || hour < 6;
+    
+    if ((code === 0 || code === 1) && isNight) return '🌙';
     if (code === 0 || code === 1) return '☀️';
     if (code === 2) return '⛅';
     if (code === 3) return '☁️';

@@ -16,7 +16,7 @@ function displayCurrentWeather(data, locationName = 'Tu ubicación') {
     console.log('Current data:', currentData);
     
     const weatherDesc = getWeatherDescription(currentData.weather_code);
-    const weatherIcon = getWeatherIcon(currentData.weather_code);
+    const weatherIcon = getWeatherIcon(currentData.weather_code, new Date());
     
     cityName.textContent = locationName;
     tempValue.textContent = Math.round(currentData.temperature_2m);
@@ -38,7 +38,7 @@ function displayHourlyForecast(data) {
         const temp = Math.round(hourlyData.temperature_2m[i]);
         const weatherCode = hourlyData.weather_code[i];
         const time = formatTime(hourlyData.time[i]);
-        const icon = getWeatherIcon(weatherCode);
+        const icon = getWeatherIcon(weatherCode, hourlyData.time[i]);
         
         hourCard.innerHTML = `
             <p class="forecast-time">${time}</p>
@@ -63,7 +63,7 @@ function displayDailyForecast(data) {
         const minTemp = Math.round(dailyData.temperature_2m_min[i]);
         const weatherCode = dailyData.weather_code[i];
         const date = formatDate(dailyData.time[i]);
-        const icon = getWeatherIcon(weatherCode);
+        const icon = getWeatherIcon(weatherCode, dailyData.time[i]);
         
         dayCard.innerHTML = `
             <p class="forecast-day">${date}</p>
