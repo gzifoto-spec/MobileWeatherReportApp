@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta el tiempo en tu zona - Aplicación meteorológica para mobil">
+    <title>Weather Report App</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+
+<body>
+    
+    <main class="main-content">
+        <section class="current-weather" id="currentWeather">
+            <div class="container">
+                <div class="location-display" id="locationDisplay">
+                    <h2 class="city-name">Cargando...</h2>
+                </div>
+                
+                <div class="weather-info">
+                    <div class="temperature-display" id="temperatureDisplay">
+                        <span class="temp-value">--</span>
+                        <span class="temp-unit">°C</span>
+                    </div>
+                    <div class="weather-description" id="weatherDescription">
+                        <p>--</p>
+                    </div>
+                    <div class="weather-details" id="weatherDetails">
+                        <div class="detail-item">
+                            <span class="detail-label">Humedad</span>
+                            <span class="detail-value" id="humidity">--%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Viento</span>
+                            <span class="detail-value" id="windSpeed">-- km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hourly-forecast" id="hourlyForecast">
+            <div class="container">
+                <h3 class="section-title">Próximas Horas</h3>
+                <div class="forecast-container" id="hourlyContainer">
+                </div>
+            </div>
+        </section>
+
+        <section class="daily-forecast" id="dailyForecast">
+            <div class="container">
+                <h3 class="section-title">Próximos Días</h3>
+                <div class="forecast-container" id="dailyContainer">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="src/js/utils.js"></script>
+    <script src="src/js/api.js"></script>
+    <script src="src/js/ui.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
