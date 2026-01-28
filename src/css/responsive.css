@@ -38,3 +38,39 @@
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
+@media (max-width: 768px) {
+    .location-controls {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    
+    .search-container {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    
+    .city-input {
+        min-width: 0;
+        flex: 1;
+    }
+    
+    .location-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .city-input {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .search-btn,
+    .close-search-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+}

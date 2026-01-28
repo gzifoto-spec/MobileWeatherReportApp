@@ -39,3 +39,29 @@ async function getDailyForecast(lat, lon) {
         throw error;
     }
 }
+
+async function searchCity(cityName) {
+    const url = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(cityName)}&count=1&language=es&format=json`;
+    
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Error searching city');
+        
+        const data = await response.json();
+        
+        if (!data.results || data.results.length === 0) {
+            throw new Error('City not found');
+        }
+        
+        return {
+            name: data.results[0].name,
+            country: data.results[0].country,
+            latitude: data.results[0].latitude,
+            longitude: data.results[0].longitude,
+            admin1: data.results[0].admin1
+        };
+    } catch (error) {
+        console.error('Error searching city:', error);
+        throw error;
+    }
+}
