@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .location-btn span {
+        display: none;
+    }
+    
+    .location-btn::after {
+        content: '📍';
+    }
+    
+    .city-name {
+        font-size: 1.5rem;
+    }
+    
+    .temperature-display {
+        font-size: 3rem;
+    }
+    
+    .forecast-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media (min-width: 769px) {
+    .current-weather {
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+    
+    .hourly-forecast .forecast-container {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    
+    .daily-forecast .forecast-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
