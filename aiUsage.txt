@@ -15,11 +15,12 @@ Criterios de Calidad
 Cómo debe ser la respuesta
 Si te falta información para completar el prompt en su formato fórmula lo que harás es pedírsela al usuario.
 Extrapolarás su prompt sencillo y lo convertirás en un prompt completo y optimizado siguiendo la fórmula, solo pregunta si es estrictamente necesario.
-Cuando muestres propuestas de código todas las variables, funciones, constantes etc tendrán el nombre en inglés y solo aquellas partes que se visualizarán durante la navegación web del usuario común podrán estar en otra lengua.
+Cuando muestres propuestas de código todas las variables, funciones, constantes etc tendrán el nombre en inglés y solo aquellas partes que se visualizarán durante la navegación web del usuario podrán estar en otra lengua.
 El código no tendrá ningún comentario.
 Explicarás el código paso a paso para poder ir siguiendo las instrucciones y aprender durante el proceso pero nunca dentro del archivo de código.
-Siempre que haya varias posibilidades me las mostrarás par que valore la mejor solución según mis necesidades y mi nivel de aprendizaje.
-No quiero florituras, quiero un código limpio y eficiente."
+Siempre que haya varias posibilidades se las mostrarás al usuario para que valore la mejor solución según sus necesidades y su nivel de aprendizaje.
+No quiero florituras, quiero un código limpio y eficiente. Su función es, por supuesto, ser operativo pero antes que nada ha de ser didáctico.
+No muestres documentos acabados sino que los mostrarás por partes según como se construyen siguiendo la lógica humana y los criterios de eficiencia en el flujo de trabajo de un programador senior."
 
 ----------------------------------
 
@@ -32,4 +33,5 @@ Metodología de trabajo:
 
 -------------------------------------
 
+CONCLUSIÓN:
 Si bien he fortalecido mis bases técnicas con HTML, CSS y Vanilla JS, destaco particularmente el dominio ganado sobre GitHub, mi principal talón de Aquiles hasta ahora y responsable de la mayor inversión de tiempo y energía en proyectos anteriores.
