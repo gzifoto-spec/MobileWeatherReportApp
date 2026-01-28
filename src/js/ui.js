@@ -4,16 +4,25 @@ function displayCurrentWeather(data, locationName = 'Tu ubicación') {
     const description = document.getElementById('weatherDescription');
     const humidity = document.getElementById('humidity');
     const windSpeed = document.getElementById('windSpeed');
-
+    
+    console.log('Current weather data:', data);
+    
+    if (!data.current) {
+        console.error('No current data available');
+        return;
+    }
+    
     const currentData = data.current;
+    console.log('Current data:', currentData);
+    
     const weatherDesc = getWeatherDescription(currentData.weather_code);
     const weatherIcon = getWeatherIcon(currentData.weather_code);
-
+    
     cityName.textContent = locationName;
-    tempValue.textContent = Math.round(currentData.temperaure_2m);
+    tempValue.textContent = Math.round(currentData.temperature_2m);
     description.querySelector('p').textContent = `${weatherIcon} ${weatherDesc}`;
-    humidity.textContent = `${currentData.relative_humidity_2m}`;
-    windSpeed.textContent = '${Math.round(currentData.wind_speed_10m)} km/h';
+    humidity.textContent = `${currentData.relative_humidity_2m}%`;
+    windSpeed.textContent = `${Math.round(currentData.wind_speed_10m)} km/h`;
 }
 
 function displayHourlyForecast(data) {

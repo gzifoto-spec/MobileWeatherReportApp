@@ -3,27 +3,27 @@ function getCurrentPosition() {
         if (!navigator.geolocation) {
             reject(new Error('Geolocation not supported'));
         }
-
-        navigator.geolocation.getCurrentPosition(resolve,reject);
+        
+        navigator.geolocation.getCurrentPosition(resolve, reject);
     });
+}
 
 function formatDate(dateString) {
     const date = new Date(dateString);
-    return date.toLocaleDateString('es-Es', {
-        weekday: 'short',
-        day: 'numeric',
-        month: 'short'
+    return date.toLocaleDateString('es-ES', { 
+        weekday: 'short', 
+        day: 'numeric', 
+        month: 'short' 
     });
 }
 
 function formatTime(dateString) {
     const date = new Date(dateString);
-    return date.toLocaleDateString('es-Es', {
-        hour: '2-digit',
-        minute: '2-digit'
+    return date.toLocaleTimeString('es-ES', { 
+        hour: '2-digit', 
+        minute: '2-digit' 
     });
 }
-
 
 function getWeatherDescription(code) {
     const weatherCodes = {
@@ -68,5 +68,4 @@ function getWeatherIcon(code) {
     if (code >= 85 && code <= 86) return '🌨️';
     if (code >= 95 && code <= 99) return '⛈️';
     return '🌡️';
-}
 }
