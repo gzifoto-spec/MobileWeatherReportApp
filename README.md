@@ -244,7 +244,6 @@ MobileWeatherReportApp/
 
 Potential features for future versions:
 
-- [ ] Manual city search functionality
 - [ ] Save favorite locations
 - [ ] Dark/Light theme toggle
 - [ ] Temperature graphs and charts
@@ -318,18 +317,16 @@ main (production)
        ├── feature/javascript-utils
        ├── feature/api-integration
        ├── feature/ui-components
-       └── feature/main-app-logic
+       ├── feature/main-app-logic
+       └── feature/city-search
 ```
 
 ### Commit Convention
 
 - `feat:` New feature
 - `fix:` Bug fix
-- `docs:` Documentation changes
 - `style:` Code style changes (formatting)
-- `refactor:` Code refactoring
 - `test:` Adding tests
-- `chore:` Maintenance tasks
 
 ### Code Style
 
