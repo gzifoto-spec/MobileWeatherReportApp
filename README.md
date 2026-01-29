@@ -15,7 +15,7 @@ MobileWeatherReportApp is a single-page application (SPA) that displays comprehe
 - Daily forecast for the next 7 days
 - Automatic geolocation with fallback to default location
 - Night mode weather icons (moon displayed between 10 PM - 6 AM)
-
+ 
 Fully functional demo => (https://gzifoto-spec.github.io/MobileWeatherReportApp/)  
 
 <table>
