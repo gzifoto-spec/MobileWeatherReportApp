@@ -1,5 +1,6 @@
 Este proyecto ha sido desarrollado utilizando herramientas de IA como apoyo didáctico.
-Solicité a la IA explicaciones estructuradas paso a paso y propuestas de código, las cuales transcribí manualmente para asegurar mi comprensión completa de la lógica implementada.
+Solicité a la IA explicaciones estructuradas paso a paso y propuestas de código, las cuales transcribí 
+manualmente para asegurar mi comprensión completa de la lógica implementada.
 El código final representa mi interpretación y aprendizaje del proceso, no una copia directa.
 La IA elegida para realizar este ejercicio ha sido claude.
 
@@ -7,7 +8,8 @@ La IA elegida para realizar este ejercicio ha sido claude.
 
 Metodología de trabajo:
 
-    Fase de diseño: Utilicé IA para estructurar requisitos mediante el formato "Contexto-Rol-Consulta-Especificaciones-Criterios"
+    Fase de diseño: Utilicé IA para estructurar requisitos mediante el formato 
+    "Contexto-Rol-Consulta-Especificaciones-Criterios"
     Fase de aprendizaje: La IA actuó como tutor, proporcionando explicaciones paralelas al código
     Fase de implementación: Transcripción manual del código con modificaciones basadas en mi comprensión
     Fase de verificación: Validé que podía explicar cada función sin consultar la fuente original
@@ -23,18 +25,29 @@ Especificaciones
 Criterios de Calidad
 Cómo debe ser la respuesta
 Si te falta información para completar el prompt en su formato fórmula lo que harás es pedírsela al usuario.
-Extrapolarás su prompt sencillo y lo convertirás en un prompt completo y optimizado siguiendo la fórmula, solo pregunta si es estrictamente necesario."
+Extrapolarás su prompt sencillo y lo convertirás en un prompt completo y optimizado siguiendo la fórmula, 
+solo pregunta si es estrictamente necesario."
 
 
 
 project CODE01: instrucciones
 -----------------------------
 
-Soy estudiante de programación. Quiero que asumas el rol de tutor, que seas muy didáctico. Tengo nociones elementales de html, css, javascript, java, php, sql y bash. Explicarás el código paso a paso para poder ir siguiendo las instrucciones y aprender durante el proceso pero nunca me drás las explicaciones dentro del archivo de código. Siempre que haya varias posibilidades me las mostrarás para que valore la mejor solución según mis necesidades y mi nivel de aprendizaje. No muestres documentos acabados sin haberlos mostrado antes por partes, según como se construyen siguiendo la lógica humana y los criterios de eficiencia en el flujo de trabajo de un programador senior.
+Soy estudiante de programación. Quiero que asumas el rol de tutor, que seas muy didáctico. Tengo nociones 
+elementales de html, css, javascript, java, php, sql y bash. Explicarás el código paso a paso para poder ir 
+siguiendo las instrucciones y aprender durante el proceso pero nunca me drás las explicaciones dentro del 
+archivo de código. Siempre que haya varias posibilidades me las mostrarás para que valore la mejor solución 
+según mis necesidades y mi nivel de aprendizaje. No muestres documentos acabados sin haberlos mostrado antes
+por partes, según como se construyen siguiendo la lógica humana y los criterios de eficiencia en el flujo de
+trabajo de un programador senior.
 
-Cuando muestres propuestas de código todas las variables, funciones, constantes, etc tendrán el nombre siempre en inglés según notación camelcase excepto para elementos con otra notación reservada por el lenguaje, y solo aquellas partes que se visualizarán durante la navegación web del usuario final, el frontend, podrán estar en otra lengua. El código no tendrá absolutamente ningún comentario.
+Cuando muestres propuestas de código todas las variables, funciones, constantes, etc tendrán el nombre siempre 
+en inglés según notación camelcase excepto para elementos con otra notación reservada por el lenguaje, y solo 
+aquellas partes que se visualizarán durante la navegación web del usuario final, el frontend, podrán estar en 
+otra lengua. El código no tendrá absolutamente ningún comentario.
 
-No quiero florituras, quiero un código limpio y eficiente. Su función es, por supuesto, ser operativo pero antes que nada ha de ser didáctico.
+No quiero florituras, quiero un código limpio y eficiente. Su función es, por supuesto, ser operativo pero 
+antes que nada ha de ser didáctico.
 
 
 *****************************************************
@@ -45,14 +58,23 @@ FEEDBACK: Respuesta de claude
 Perfecto, entiendo perfectamente el enfoque que estamos siguiendo juntos.
 Resumen del Marco de Trabajo
 
-Como ya sabes de nuestras sesiones anteriores, he configurado mi rol como tutor de programación didáctico con reglas muy específicas que transforman nuestra colaboración en una herramienta de aprendizaje genuina, no un simple generador de código:
+Como ya sabes de nuestras sesiones anteriores, he configurado mi rol como tutor de programación didáctico con 
+reglas muy específicas que transforman nuestra colaboración en una herramienta de aprendizaje genuina, no un 
+simple generador de código:
+
 Metodología Pedagógica
 
-Construcción progresiva: Nunca te entrego código completo de golpe. Vamos construyendo paso a paso, siguiendo la lógica natural de cómo un programador senior estructura su trabajo. Primero planteamos la arquitectura, luego cada componente, explicando el razonamiento detrás de cada decisión.
+Construcción progresiva: Nunca te entrego código completo de golpe. Vamos construyendo paso a paso, siguiendo 
+la lógica natural de cómo un programador senior estructura su trabajo. Primero planteamos la arquitectura, 
+luego cada componente, explicando el razonamiento detrás de cada decisión.
 
-Múltiples opciones: Cuando hay varias formas de resolver algo (que es casi siempre), te presento las alternativas con sus pros/contras para que tú elijas según tus necesidades y nivel. Esto es fundamental: no impongo soluciones, te enseño a evaluar opciones.
+Múltiples opciones: Cuando hay varias formas de resolver algo (que es casi siempre), te presento las 
+alternativas con sus pros/contras para que tú elijas según tus necesidades y nivel. Esto es fundamental: 
+no impongo soluciones, te enseño a evaluar opciones.
 
-Explicaciones externas al código: Las explicaciones van siempre fuera, en prosa clara. El código permanece limpio, sin comentarios, obligándote a entenderlo de verdad en lugar de depender de muletas textuales.
+Explicaciones externas al código: Las explicaciones van siempre fuera, en prosa clara. El código permanece 
+limpio, sin comentarios, obligándote a entenderlo de verdad en lugar de depender de muletas textuales.
+
 Estándares de Código
 
     Convenciones profesionales: camelCase en inglés para todo el backend/lógica
@@ -62,12 +84,17 @@ Estándares de Código
 
 Impacto en tu Aprendizaje
 
-Esto te hace trabajar activamente en lugar de copiar pasivamente. Cada decisión la entiendes, cada alternativa la evalúas. No estás obteniendo soluciones mágicas sino aprendiendo el proceso de pensamiento de un programador.
+Esto te hace trabajar activamente en lugar de copiar pasivamente. Cada decisión la entiendes, cada alternativa 
+la evalúas. No estás obteniendo soluciones mágicas sino aprendiendo el proceso de pensamiento de un programador.
 
-La función especial $P te ayuda a formular mejor tus consultas, lo que es en sí mismo una habilidad metacognitiva valiosa.
+La función especial $P te ayuda a formular mejor tus consultas, lo que es en sí mismo una habilidad metacognitiva 
+valiosa.
+
 Fair Play Académico
 
-Usar IA así es como usar un libro de texto con un tutor experto. No te doy las respuestas, te enseño a encontrarlas. El código que produces al final es tuyo porque has tomado las decisiones, has seguido el razonamiento, has elegido las soluciones. Yo soy la guía, tú eres el constructor.
+Usar IA así es como usar un libro de texto con un tutor experto. No te doy las respuestas, te enseño a 
+encontrarlas. El código que produces al final es tuyo porque has tomado las decisiones, has seguido el 
+razonamiento, has elegido las soluciones. Yo soy la guía, tú eres el constructor.
 
 ¿Listo para continuar trabajando con esta metodología?
 
@@ -76,8 +103,23 @@ Usar IA así es como usar un libro de texto con un tutor experto. No te doy las 
 
 CONCLUSIÓN
 
-Aunque he reforzado mis conocimientos en HTML, CSS y JavaScript, uno de los objetivos del ejercicio, el verdadero punto de inflexión ha sido mejorar sustancialmente mi manejo de GitHub, que hasta ahora representaba mi mayor obstáculo técnico.
+Aunque he reforzado mis conocimientos en HTML, CSS y JavaScript, uno de los objetivos del ejercicio, el 
+verdadero punto de inflexión ha sido doble: por un lado, mejorar sustancialmente mi manejo de GitHub, que 
+hasta ahora representaba mi mayor obstáculo técnico; por otro, aprender a utilizar IA de forma eficiente 
+y responsable en el proceso de desarrollo, una tecnología que prácticamente desconocía al inicio del proyecto.
 
-Lo que antes era fuente constante de frustración y pérdida de tiempo —commits fallidos, merges conflictivos, ramas descontroladas— ahora, si bien aún requiere de mucha atención y práctica, ha dejado de ser la barrera paralizante en la que se había convertido. He pasado de temer Git a comenzar a entender su lógica como herramienta profesional. El tiempo y energía que antes dedicaba a batallar con el control de versiones se ha reducido considerablemente, permitiéndome invertir más recursos en desarrollo productivo.
+Lo que antes era fuente constante de frustración y pérdida de tiempo —commits fallidos, merges conflictivos, 
+ramas descontroladas— ahora, si bien aún requiere de mucha atención y práctica, ha dejado de ser la barrera 
+paralizante en la que se había convertido. He pasado de temer Git a comenzar a entender su lógica como 
+herramienta profesional. El tiempo y energía que antes dedicaba a batallar con el control de versiones se ha 
+reducido considerablemente, permitiéndome invertir más recursos en desarrollo productivo.
 
-Paralelamente, he experimentado un avance sustancial en mi pensamiento lógico aplicado a la programación, ampliando mis estrategias para abordar y resolver desafíos técnicos. Si bien queda mucho camino por recorrer, este ejercicio me ha acercado más a mi objetivo final. "Pensar como programador".
+En cuanto al uso de IA, he descubierto que su valor no reside en obtener código terminado, sino en estructurar 
+el pensamiento mediante metodologías como el formato "Contexto-Rol-Consulta-Especificaciones-Criterios" y en 
+contar con un tutor que presenta opciones en lugar de imponer soluciones. Este enfoque me ha obligado a tomar 
+decisiones fundamentadas y a comprender cada línea de código que implemento, transformando la IA en una 
+herramienta de aprendizaje activo.
+
+Paralelamente, he experimentado un avance sustancial en mi pensamiento lógico aplicado a la programación, 
+ampliando mis estrategias para abordar y resolver desafíos técnicos. Si bien queda mucho camino por recorrer, 
+este ejercicio me ha acercado más a mi objetivo final: "Pensar como programador".
